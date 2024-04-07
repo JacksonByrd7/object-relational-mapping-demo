@@ -12,7 +12,7 @@ Product.belongsTo(Category, {
 });
 
 // a product belongs to many tags through the productTag model
-Product.belongsToMany(tag, {
+Product.belongsToMany(Tag, {
   through: ProductTag, // the intermediate model
   foreignKey: 'product_id', // The foreign key in the product model
 });
